@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BulgariaSite.master.cs" Inherits="NestedMasterPages.bg.BulgariaSite" %>
+
+
+<asp:Content ID="BulgariaMaster" ContentPlaceHolderID="HeaderContent" runat="server">
+    <li><a runat="server" href="~/bg/Home">Home</a></li>
+    <li><a runat="server" href="~/bg/About">About</a></li>
+    <li><a runat="server" href="~/bg/Contacts">Contacts</a></li>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="bgContentPlaceHolder" runat="server"/>
+
+    </div>
+</asp:Content>
